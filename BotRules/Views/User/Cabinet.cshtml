@@ -1,0 +1,77 @@
+﻿@model  List<BotRules.Models.Bot.Bot>
+@Html.AntiForgeryToken()
+<head>
+    <link href="~/css/cabinet.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/botSv.css" type="text/css" rel="stylesheet" />
+</head>
+<div class="userPanel">
+    <div class="userTitle">
+        Личный кабинет
+    </div>
+    <div class="userInfo">
+        @if (Model != null)
+        {
+            int count = Model.Count();
+            <div class="row">
+                <div class="rowTitle">
+                    Ботов:
+                </div>
+                <div class="rowValue">
+                    @count/3
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowTitle">
+                    Ботов активных всего:
+                </div>
+                <div class="rowValue">
+                    @BotStorage.ActivityBots.Count()
+                </div>
+            </div>
+            <div class="bots">
+                @foreach (var bot in Model)
+                {
+                    <div class="targetInfo">
+                        <div class="topDiv">
+                            <img class="targetPhoto" src="~/images/Bot.png" />
+                            <div class="targetTitle">
+                                @bot.Name
+                            </div>
+                        </div>
+                        <a class="targetEdit link edit" asp-action="Editor" asp-controller="Bot" asp-route-botId="@bot.Id">Редактор</a>
+                        <input type="button" class="targetEdit TurnBot" value="@(bot.IsActive?"Выключить":"Включить")" id="@bot.Id" />
+                    </div>
+                }
+                @if (count < 3)
+                {
+                    <div class="targetInfo" id="createNewTarget">
+                        <input type="button" class="targetEdit" value="Новый бот" id="CreateNewTarget" />
+                        <div id="creating">
+                            <div class="row">
+                                <b class="cbt">
+                                    Имя
+                                </b>
+                                <input type="text" class="inputData" id="BotName" />
+                            </div>
+                            <div class="row">
+                                <b class="cbt">
+                                    Ключ
+                                </b>
+                                <input type="text" class="inputData" id="BotKey" />
+                            </div>
+                            <input type="button" value="Добавить" class="createTarget" id="BeginCreating" />
+                        </div>
+                    </div>
+
+                }
+            </div>
+        }
+        else
+        {
+
+        }
+        <a class="targetEdit link" asp-action="Logout" asp-controller="User">Выйти</a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="~/js/Cabinet.js" type="text/javascript"></script>

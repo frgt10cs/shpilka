@@ -1,0 +1,39 @@
+﻿.userPanel {
+    background-color: white;
+    height: 450px;
+    width: 800px;
+    margin: 0 auto;
+    border: 6px solid #C4DBE7;
+    margin-top: 20px;
+}
+
+.userTitle {
+    border-bottom: 6px solid #C4DBE7;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    background-color: #C4DBE7;
+}
+
+.userInfo {
+    padding: 10px 16px;
+}
+
+.rowTitle {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rowValue {
+    display: inline-block;
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.topDiv {
+    display: flex;
+}

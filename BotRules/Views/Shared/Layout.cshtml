@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/layout.css" type="text/css" rel="stylesheet">    
+</head>
+<body>   
+    <div class="wrapper">
+        <header>
+            <img class="logotype" src="~/images/Logo.png" />
+            <div class="headerMenu">
+                <div class="headerCategory">
+                    <a href="/">
+                        Главная
+                    </a>
+                </div>
+                <div class="headerCategory">
+                    <a href="/home/aboutus">
+                        О нас
+                    </a>
+                </div>
+                <div class="headerCategory">
+                    <a href="@(User.Identity.IsAuthenticated ? "/user/cabinet" : "/account/login")">
+                        Кабинет
+                    </a>
+                </div>
+            </div>
+        </header>
+        @RenderBody()
+    </div>
+</body>
+</html>

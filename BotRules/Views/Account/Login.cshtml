@@ -1,0 +1,26 @@
+﻿@model BotRules.ViewModels.LoginViewModel
+@{
+    Layout = "AccountLayout";
+}
+<div class="m-forms">
+    <h4>Вход в личный кабинет</h4>
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <form asp-action="Login" asp-controller="Account" method="post">
+        <div class="mf-input-container">
+            <label class="f-user" for="u-fam">
+                Логин
+                <input type="text" asp-for="Login">
+                <span class="field-msg" asp-validation-for="Login"></span>
+            </label>
+            <label class="f-user" for="u-nam">
+                Пароль
+                <input type="password" asp-for="Password">
+                <span class="field-msg" asp-validation-for="Password"></span>
+            </label>
+        </div>
+        <input type="submit" value="Войти">
+    </form>
+    <span class="acc-link">
+        <a href="/account/registration" title="Регистрация">Зарегистрироваться</a>
+    </span>
+</div>

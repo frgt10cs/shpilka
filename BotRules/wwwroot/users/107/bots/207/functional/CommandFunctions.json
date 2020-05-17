@@ -1,0 +1,23 @@
+[
+  {
+    "Command": "zapis",
+    "Response": {
+      "Answer": "����",
+      "Photo": null
+    },
+    "InputFunctions": [
+      {
+        "ArgumentsName": [ "Storage", "Answer" ],
+        "Arguments": [ "�����", "123" ],
+        "IsAuto": false,
+        "FunctionType": 0
+      },
+      {
+        "ArgumentsName": [ "Storage", "Answer" ],
+        "Arguments": [ "������", "345" ],
+        "IsAuto": false,
+        "FunctionType": 0
+      }
+    ]
+  }
+]

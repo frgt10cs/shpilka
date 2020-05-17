@@ -1,0 +1,19 @@
+﻿@model BotRules.ViewModels.RegistrationViewModel
+@{ 
+    Layout = "AccountLayout";
+}
+<div class="main-inner-box">
+    <div class="m-forms">
+        <h4>Регистрация пользователя</h4>
+        <div asp-validation-summary="ModelOnly"></div>
+        <form asp-action="Registration" asp-controller="Account" method="post">
+            <label class="f-user" for="u-fam">Фамилия<input type="text" asp-for="LastName"><span class="field-msg" asp-validation-for="LastName"></span></label>
+            <label class="f-user" for="u-nam">Имя<input type="text" asp-for="FirstName"><span class="field-msg" asp-validation-for="FirstName"></span></label>
+            <label class="f-user" for="u-log">Логин<input type="text" asp-for="Login"><span class="field-msg" asp-validation-for="Login"></span></label>
+            <label class="f-user" for="u-email">Эл. почта<input type="text" asp-for="Email"><span asp-validation-for="Email"></span></label>
+            <label class="f-user" for="u-pass1">Пароль<input type="password" asp-for="Password"><span class="field-msg" asp-validation-for="Password"></span></label>
+            <label class="f-user" for="u-pass2">Подтвердите пароль<input type="password" asp-for="ConfirmPassword"><span class="field-msg" asp-validation-for="ConfirmPassword"></span></label>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>

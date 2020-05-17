@@ -1,0 +1,125 @@
+﻿html {
+    background: radial-gradient(at center 10%, white, #C7E0EF);
+    height: auto;
+    min-height: 100vh;
+}
+
+body {    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+    height: 150px;
+    text-align: center;
+    margin-top: 50px;
+    height: auto;
+}
+
+.logotype {
+    height: 100px;
+}
+
+.headerMenu {
+    margin-top: 20px;
+    background-color: #C4DBE7;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.headerCategory {
+    padding: 15px 40px;    
+}
+
+.headerCategory a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.response {
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+}
+
+#aboutUs {
+    height: 250px;    
+    text-align: center;
+    padding: 10px 40px;
+    font-weight: bold;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#aboutUs a{
+    text-decoration: none;
+    color: #01C5F0 ;
+    font-size: 20px;
+    display: block;
+    height: 15px;
+}
+#aboutUs a:hover{    
+    color: #01AAD0;
+    /*content:'as';*/
+}
+
+
+.item {
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item a p.new-label span {
+    position: relative;
+}
+
+.item:hover a p.new-label span {
+    display: none;
+}
+
+.item:hover a p.new-label:after {
+    content: 'Богоподобный';    
+}
+
+.item:hover a p.m:after {
+    content: 'Жабаскриптер, фу!';    
+}
+
+.item:hover a p.m span {
+    display: none;
+}
+
+.item:hover a p.s:after {
+    content: '!Архитектор';
+}
+
+.item:hover a p.s span {
+    display: none;
+}
+
+.item:hover a p.d:after {
+    content: 'Футбольчик';
+}
+
+.item:hover a p.d span {
+    display: none;
+}
+
+.rtif {
+    color: #01AAD0 !important;
+}

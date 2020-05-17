@@ -1,0 +1,1 @@
+[{"Command":"hello","Id":0,"Response":{"Answer":"Hi!","Photo":""},"InputFunctions":[]},{"Command":"goodbye","Id":0,"Response":{"Answer":"bye","Photo":""},"InputFunctions":[]}]

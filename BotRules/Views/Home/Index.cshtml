@@ -1,0 +1,35 @@
+﻿<head>
+    <link href="~/css/home.css" type="text/css" rel="stylesheet" />
+</head>
+<div class="variants">
+    <div class="variant">
+        <img src="~/images/VK.png" class="variantImage" />
+        <div class="variantTitle">
+            VKontakte
+        </div>
+        <div class="variantText">
+            В разработке
+        </div>
+        <a href="#" class="variantStart">Создать</a>
+    </div>
+    <div class="variant">
+        <img src="~/images/Telegram.png" class="variantImage" />
+        <div class="variantTitle">
+            Telegram
+        </div>
+        <div class="variantText">
+            Создайте и настройте собственного Telegram-бота! Позволяет создать и настроить свою базу данных и в реальном времени редактировать набор желаемых функций через удобный интерфейс!
+        </div>
+        <a href="@(User.Identity.IsAuthenticated ? "/user/cabinet" : "/account/login")" class="variantStart">Создать</a>
+    </div>
+    <div class="variant">
+        <img src="~/images/WEB.png" class="variantImage" />
+        <div class="variantTitle">
+            Web
+        </div>
+        <div class="variantText">
+            В разработке
+        </div>
+        <a href="#" class="variantStart">Создать</a>
+    </div>
+</div>

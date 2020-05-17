@@ -1,0 +1,53 @@
+﻿.variants {
+    height: auto;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.variant {
+    background-color: #C9DFEC;
+    width: 25%;
+    margin: 0px 20px;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    width: 280px;
+}
+
+.variantImage {
+    width: 200px;
+    height: 200px;
+}
+
+.variantTitle {
+    margin-top: 20px;
+    color: #02C3EF;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.variantText {
+    padding: 10px 25px;
+    color: #52595C;
+    height: 170px;
+}
+
+.variantStart {
+    background-color: #02C3EF;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 30px;
+    margin-top: 20px;
+    display: block;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+
+.variantStart:hover {
+    background-color: #02A9CE;
+}

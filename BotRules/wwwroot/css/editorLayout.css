@@ -1,0 +1,303 @@
+﻿.main{
+    display: flex;       
+    
+    margin-top: 20px;
+}
+
+.functionPanel{
+    height: 700px;
+    width: 200px;
+    background-color: #01C4F0;
+    margin-right: 25px;    
+    border-radius: 10px;     
+    padding: 0px 10px;  
+}
+
+.logoImg{
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.functions{    
+    margin: 0 auto;
+    background-color: #C9DFEC;
+    margin-top: 20px;
+    width: 170px; 
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.function {
+    width: 85%;
+    height: 80px;
+    background-color: #01C4F0;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.function:hover{
+    border: 2px solid white;
+}
+
+.editorPanel{    
+    height: 100%;
+    width: 70%;
+}
+
+.editorPanel{
+    background-image: url("/images/Setka.png");
+    min-height: 700px;
+    width: 100%;
+    background-color: #C9DFED;
+}
+
+.createBotPanel{
+    margin: 0 auto;
+    padding: 20px 80px;
+    border-radius: 10px;
+    border: 3px solid cornflowerblue;
+    display: inline-block;
+}
+
+.commandFunction {
+    padding: 15px 35px;
+    background-color: #01C4F0;
+    display: inline-table;
+    margin: 10px 3%;
+    border-radius: 10px;    
+    height: 62px;
+    position: relative;
+}
+
+.row {    
+    padding-bottom: 10px;
+}
+
+.rowTitle {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.rowValue{
+    position: relative;
+    float: right;
+    margin-left: 20px;
+}
+
+.details {
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #DAEAF4;
+    color: #01C5F0;
+    padding: 3px 0px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.detail:scope:hover{
+
+}
+
+.container{
+    text-align: center;
+    padding: 20px 40px;    
+}
+
+.addFunctionIcon {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    bottom: 40px;
+    right: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 4px solid #01C4F0;
+    color: #01C4F0;
+    cursor: pointer;
+}
+
+.addFunctionIcon:hover{
+    background-color: #C9DFEC;
+}
+
+.darkness {
+    opacity: 0.6;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    z-index:9;   
+    display: none;
+}
+
+.functionOption {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    left: 0;
+    z-index: 10;
+    top: 100px;
+    display: none;
+}
+
+#inputFunctions {
+    width: 450px;
+    margin: 0 auto;
+    height: 340px;
+    overflow-y: scroll;
+    border: 4px solid #01C4F0;
+    margin-top: 35px;
+    padding-top: 15px;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.inputFunction {
+    padding: 15px 35px;
+    background-color: #01C4F0;
+    display: inline-table;
+    margin: 10px 3%;
+    border-radius: 10px;
+    width: auto;    
+    background-color: #C9DFEC;
+    position: relative;
+    color: #01AAD0;
+    font-weight: bold;
+}
+
+.delFunctionIcon {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #01C4F0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt {
+    border: 4px solid #B1D6EC !important;
+    color: #B1D6EC !important;
+}
+
+.opt:hover{
+    background-color:#E4E9EC!important;
+}
+
+.close {
+    position: fixed;
+    top: 50px;
+    right: 450px;
+    color: #01C4F0;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.selectFunction {
+    width: 160.8px;
+    margin-left: 10px;
+    border: 1px solid #01AAD0;
+    color: #01AAD0;
+    font-weight: bold;
+}
+
+#storages{
+    display: none;
+}
+
+#files{
+    display: none;
+}
+
+.createTarget{
+    margin-bottom: 10px !important;
+}
+
+.tis{
+    display: inline-block;
+}
+
+.file_upload {
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 2em;
+    display: none;
+}
+.file_upload > button{
+    height: 58px;
+    width: 58px;    
+    background-color: white;
+    bottom: 120px;
+    right: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 4px solid #0191B2;
+    color: #0191B2;
+    cursor: pointer;
+}
+.file_upload > div{
+    padding-left: 1em;
+}
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;    
+    -ms-transform: scale(20);
+    opacity: 0;
+    cursor: pointer
+}
+
+#formFile {
+    position: fixed;
+    bottom: 120px;
+    right: 60px;
+}
+
+#UploadStorageToServer {
+    bottom: 200px;
+    color: #01728B;
+    border: 4px solid #01728B;
+    width: 58px;
+    height: 58px;
+    display:none;
+}

@@ -1,0 +1,11 @@
+﻿[
+  {
+    "Command": "hello",
+    "Id": 0,
+    "NextFuncId": 0,
+    "Response": {
+      "Answer": "Hi!",
+      "Photo": ""
+    }
+  }
+]
